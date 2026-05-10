@@ -100,13 +100,7 @@ This architecture supports:
 
 ---
 
-## 📷 Screenshots
-
-Add screenshots here:
-- VPC configuration
-- EC2 instances
-
-Example:
+## 📷 Architecture Diagram
 
 ![Architecture Diagram](images/architecture.png)
 
