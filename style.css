@@ -1,0 +1,132 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0d1117; /* Deep dark background */
+    font-family: 'Inter', sans-serif;
+    color: #ffffff;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header */
+.main-header {
+    margin-top: 40px;
+    letter-spacing: 2px;
+}
+
+.main-header h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+/* Container */
+.container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/* Terminal Window */
+.terminal-window {
+    background-color: #161b22;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 12px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    border: 1px solid #30363d;
+}
+
+/* Terminal Header/Title Bar */
+.terminal-header {
+    background-color: #21262d;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.window-controls {
+    display: flex;
+    gap: 8px;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.red { background-color: #ff5f56; }
+.yellow { background-color: #ffbd2e; }
+.green { background-color: #27c93f; }
+
+.window-title {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    left: 0;
+    font-size: 0.8rem;
+    color: #8b949e;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+/* Terminal Body */
+.terminal-body {
+    padding: 30px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.95rem;
+}
+
+.terminal-line {
+    margin-bottom: 10px;
+}
+
+.user-path {
+    color: #4fcf7d; /* Green user prompt */
+}
+
+.command {
+    color: #ffffff;
+    margin-left: 10px;
+}
+
+.terminal-response {
+    color: #8b949e;
+    margin-bottom: 40px;
+}
+
+/* Fetch Button */
+.fetch-btn {
+    width: 100%;
+    background: transparent;
+    border: 1px solid #4fcf7d;
+    color: #4fcf7d;
+    padding: 15px;
+    border-radius: 6px;
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 500;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.fetch-btn:hover {
+    background-color: rgba(79, 207, 125, 0.1);
+    box-shadow: 0 0 15px rgba(79, 207, 125, 0.2);
+}
+
+.fetch-btn:active {
+    transform: scale(0.98);
+}
